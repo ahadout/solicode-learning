@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-library.css">
+    <title>Solicoders</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Shorthand for $( document ).ready()
+        $(function() {
+            $(".toggle").on("click",function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                     
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+
+        });
+    </script>
+</head>
+    <body>
+        <header>
+            <ul class="menu">
+                <li class="logo"><a href="#"><img src="logo.svg"></a></li>
+                <li class="item"><a href="#">HOME</a></li>
+                <li class="item"><a href="courses.html">Courses</a></li>
+                <li class="item" id="library"><a href="Library.html">Library</a></li>
+                <li class="item"><a href="profile.html">Mon Profile</a></li>
+                <li class="item"><a href="CONTACT.html">Contact</a></li>
+                <li class="item"><a href="#">About us</a></li>
+                <li class="item button"><a href="LOGIN.html">LOG IN</a></li>
+                <li class="item button second"><a href="SIGN-UP.html">SIGN-UP</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+                
+        </header>
+        <nav>
+            <ul class="menu1">
+                <li class="item1" id="soft_skills"><a href="#">SOFT SKILLS</a></li>
+                <li class="item1"><a href="#">ENTREPRENARIAT</a></li>
+                <li class="item1"><a href="#">ENGLISH</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="section1">
+                <h2>SOFT SKILLS</h2>
+                <ul class="menu3">
+                    <li class="item3"><a href="#">What is soft skills</a></li>
+                    <li class="item3"><a href="#">Time Management</a></li>
+                    <li class="item3"><a href="#">Networking</a></li>
+                    <li class="item3"><a href="#">Teamwork</a></li>
+                    <li class="item3"><a href="#">Creative Thinking</a></li>
+                    <li class="item3"><a href="#">Conflict Resolution</a></li>
+                </ul>
+            </section>
+            <section class="section2">
+                <div class="soft1">
+                    <a href="https://www.youtube.com/watch?v=djhel5XBZaU"><img src="soft1.webp"></a>
+                    <p><a href="https://www.youtube.com/watch?v=djhel5XBZaU">What is soft skills</a></p>
+                    <p><b>Formateur:</b> SAAD</p>
+                    <p><b>langue:</b> english</p>
+                </div>
+                <div class="soft2">
+                    <a href="https://www.youtube.com/watch?v=hZSARM4VaVs"><img src="soft2.webp"></a>
+                    <p><a href="https://www.youtube.com/watch?v=hZSARM4VaVs">Soft skills definition</a></p>
+                    <p><b>Formateur:</b> SAAD</p>
+                    <p><b>Langue:</b>Français</p>
+                </div>
+                <div class="soft3">
+                    <a href="https://www.youtube.com/watch?v=nYzKscYPFnM"><img src="soft3.webp"></a>
+                    <p><a href="https://www.youtube.com/watch?v=nYzKscYPFnM">definition de soft skills</a></p>
+                    <p><b>Formateur:</b> SAAD</p>
+                    <p><b>Langue:</b> Arabe</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            
+            <div class="foot">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li><a href="#">+212 637652110</a></li>
+                    <li><a href="#">solicode@email.com</a></li>
+                    <li><a href="#">@skype-solicode</a></li>
+                </ul>
+            </div>
+            
+            <div class="foot">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="#">About Solicode</a></li>
+                    <li><a href="#">Why Solicode</a></li>
+                    <li><a href="#">Where to find us</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>WE ARE ON SOCIAL MEDIAS!</h3>
+                <ul class="images">
+                    <li><a href="#"><img src="facebook.png" width="30px" height="30px"></a></li>
+                    <li><a href="#"><img src="linkedin.png" width="30px" height="30px"></a></li>
+                    <li><a href="#"><img src="twitter.png" width="30px" height="30px"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

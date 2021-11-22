@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    
+}
+header{
+    background-color: #1D1D1D;
+    padding: 5px 20px;
+}
+ul{
+    list-style-type: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #FDC500;
+}
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+}
+.second.button{
+    border-bottom: 1px white solid;
+}
+/* mobile menu */
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    order: 1;
+    cursor: pointer;
+}
+.button.item{
+    order:2;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.item.active{
+    display: block;
+}
+.bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+.bars::before,.bars::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+}
+footer{
+    background-color: #1D1D1D;
+    
+}
+.foot{
+    padding: 25px 20px;
+}
+.foot h3{
+    color: #FAD307;
+    text-decoration: underline;
+    text-align: center;
+}
+.foot a{
+    color: white;
+    text-decoration: none;
+    opacity: 50%;
+}
+.foot li{
+    text-align: center;
+}
+.foot a:hover{
+    color: white;
+    text-decoration: underline;
+    opacity: 80%;
+}
+.foot li{
+    margin-top: 5px;
+}
+.social{
+    padding: 25px 20px;
+}
+.social ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social h3{
+    color: #FAD307;
+    text-decoration: underline;
+    text-align: center;
+}
+.images li a{
+    padding-right: 10px;
+}
+main{
+    height: 100vh;
+    background-image: url("solicode_img.png");
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+}
+.cadre{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 40% 50% 10%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: #8D8D8D;
+    opacity: 75%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.logo{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.logo img{
+    margin: 50px auto 30px auto;
+}
+.logo p{
+    color: black;
+    margin-left: 20px;
+}
+.input{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+}
+.input a{
+    text-decoration: underline;
+    color: black;
+}
+.input a:hover{
+    color: #FAD307;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #FAD307;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    opacity: 50%;
+  }
+/*tablet menu*/
+@media all and (min-width:550px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .button.item{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle{
+        order: 2;
+    }
+    .second.button{
+        border: 0;
+    }
+    .button a{
+        text-decoration: none;
+        padding: 7px 15px;
+        background: transparent;
+        border: 1px solid #FAD307;
+        border-radius: 50em;
+    }
+    .button.second a{
+        background-color: #FAD307;
+        border-color: black;
+    }
+    .buttona a:hover{
+        transition: all .25s;
+    }
+    .button:not(.second) a:hover{
+        background: #FAD307;
+        border-color: black;
+        color: black;
+    }
+    .second.button a:hover{
+        color: #ddd;
+        background: transparent;
+        border-color: #FAD307;
+    }
+    
+}
+
+/*desktop*/
+@media all and (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+    .item{
+        flex: 1;
+    }
+    .button{
+        flex: 0.7;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    main{
+        grid-template-columns: 25% 50% 25%;
+    }
+    
+}

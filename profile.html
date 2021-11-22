@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-profile.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <title>Solicoders</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <script>
+        // Shorthand for $( document ).ready()
+        $(function() {
+            $(".toggle").on("click",function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");      
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+
+        });
+    </script>
+</head>
+    <body>
+        <header>
+            <ul class="menu">
+                <li class="logo"><a href="#"><img src="logo.svg"></a></li>
+                <li class="item"><a href="#">HOME</a></li>
+                <li class="item"><a href="courses.html">Courses</a></li>
+                <li class="item"><a href="Library.html">Library</a></li>
+                <li class="item"><a href="profile.html">Mon Profile</a></li>
+                <li class="item" id="contact"><a href="CONTACT.html">Contact</a></li>
+                <li class="item"><a href="#">About us</a></li>
+                <li class="item button"><a href="LOGIN.html">LOG IN</a></li>
+                <li class="item button second"><a href="SIGN-UP.html">SIGN-UP</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </header>
+        <main>
+            <main>
+                <section class="section1">
+                    <h1>Mon profile :</h1>
+                        <div class="image_profile">
+                            <img src="profile.png" width="200px" height="200px">
+                        </div>
+                        <div class="infos">
+                            <p id="name">Ahadout Mohamed</p>
+                            <p>Etudiant</p>
+                            <p>Développeur web et web mobile</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="LOGIN.html" id="button1">Deconnexion</a>
+                            <a id="button2">Paramètres</a>
+                        </div>
+                </section>
+                <section class="section2">
+                    <h2>Mes Compétence</h2>
+                    <ul>
+                        <li>C1 - Maquetter une application : <b class="niveau">Niveau 3/3</b></li>
+                        <li>C2 - Réaliser une interface utilisateur web statique et adaptable : <b class="niveau">Niveau 3/3</b></li>
+                        <li>C3 - Développer une interface utilisateur web dynamique : <b class="niveau">0</b></li>
+                        <li>C4 - Réaliser une interface utilisateur avec une solution de gestion de contenu ou e- commerce : <b class="niveau">0</b></li>
+                        <li>C5 - Créer une base de données : <b class="niveau">0</b></li>
+                        <li>C6 - Développer les composants d’accès aux données : <b class="niveau">0</b></li>
+                        <li>C7 - Développer la partie back-end : <b class="niveau">0</b></li>
+                        <li>C8 - Elaborer et mettre en œuvre des composants : <b class="niveau">0</b></li>
+                    </ul>
+                </section>
+                <section class="section3">
+                    <h2>Mes briefs :</h2>
+                    <ul>
+                        <li><img src="brief1.JPG"></li>
+                        <li><img src="brief2.JPG"></li>
+                        <li><img src="brief3.JPG"></li>
+                        <li><img src="brief4.JPG"></li>
+                        <li><img src="brief5.JPG"></li>
+                    </ul>
+                </section>
+            </main>
+        </main>
+        <footer class="footer">
+            
+            <div class="foot">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li><a href="#">+212 637652110</a></li>
+                    <li><a href="#">solicode@email.com</a></li>
+                    <li><a href="#">@skype-solicode</a></li>
+                </ul>
+            </div>
+            
+            <div class="foot">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="#">About Solicode</a></li>
+                    <li><a href="#">Why Solicode</a></li>
+                    <li><a href="#">Where to find us</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>WE ARE ON SOCIAL MEDIAS!</h3>
+                <ul class="images">
+                    <li><a href="#"><img src="facebook.png" width="30px" height="30px"></a></li>
+                    <li><a href="#"><img src="linkedin.png" width="30px" height="30px"></a></li>
+                    <li><a href="#"><img src="twitter.png" width="30px" height="30px"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

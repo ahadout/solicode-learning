@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-courses.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+
+    <title>Solicoders</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Shorthand for $( document ).ready()
+        $(function() {
+            $(".toggle").on("click",function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                     
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+
+        });
+    </script>
+</head>
+    <body>
+        <header>
+            <ul class="menu">
+                <li class="logo"><a href="#"><img src="logo.svg"></a></li>
+                <li class="item"><a href="#">HOME</a></li>
+                <li class="item" id="courses"><a href="courses.html">Courses</a></li>
+                <li class="item"><a href="Library.html">Library</a></li>
+                <li class="item"><a href="profile.html">Mon Profile</a></li>
+                <li class="item"><a href="CONTACT.html">Contact</a></li>
+                <li class="item"><a href="#">About us</a></li>
+                <li class="item button"><a href="LOGIN.html">LOG IN</a></li>
+                <li class="item button second"><a href="SIGN-UP.html">SIGN-UP</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+                
+        </header>
+        <nav>
+            <ul class="menu1">
+                <li class="item1" id="html"><a href="#">HTML</a></li>
+                <li class="item1"><a href="#">CSS</a></li>
+                <li class="item1"><a href="#">JAVA SCRIPT</a></li>
+                <li class="item1"><a href="#">PHP</a></li>
+                <li class="item1"><a href="#">BOOTSTRAP</a></li>
+                <li class="item1"><a href="#">JQUERY</a></li>
+                <li class="item1"><a href="#">REACT</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="section1">
+                <h2>HTML TUTORIALS</h2>
+                <ul class="menu3">
+                    <li class="item3"><a href="#">HTML Itronduction</a></li>
+                    <li class="item3"><a href="#">HTML Image</a></li>
+                    <li class="item3"><a href="#">HTML Links</a></li>
+                    <li class="item3"><a href="#">HTML FOOTER</a></li>
+                </ul>
+            </section>
+            <section class="section2">
+                <div class="vid1">
+                    <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU"><img src="vid1.webp"></a>
+                    <p><a href="https://www.youtube.com/watch?v=qz0aGYrrlhU">HTML Introduction</a></p>
+                    <p><b>Formateur:</b> SAAD</p>
+                    <p><b>langue:</b> english</p>
+                </div>
+                <div class="vid2">
+                    <a href="https://www.youtube.com/watch?v=b9gw0qG3esA"><img src="vid2.webp"></a>
+                    <p><a href="https://www.youtube.com/watch?v=b9gw0qG3esA">HTML Introduction</a></p>
+                    <p><b>Formateur:</b> SAAD</p>
+                    <p><b>Langue:</b>Français</p>
+                </div>
+                <div class="vid3">
+                    <a href="https://www.youtube.com/watch?v=WwNuvGLblJU"><img src="vid3.webp"></a>
+                    <p><a href="https://www.youtube.com/watch?v=WwNuvGLblJU">HTML Introduction</a></p>
+                    <p><b>Formateur:</b> SAAD</p>
+                    <p><b>Langue:</b> Arabe</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+            <div class="foot">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li><a href="CONTACT.html">+212 637652110</a></li>
+                    <li><a href="CONTACT.html">solicode@email.com</a></li>
+                    <li><a href="CONTACT.html">@skype-solicode</a></li>
+                </ul>
+            </div>
+            
+            <div class="foot">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="#">About Solicode</a></li>
+                    <li><a href="#">Why Solicode</a></li>
+                    <li><a href="#">Where to find us</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>WE ARE ON SOCIAL MEDIAS!</h3>
+                <ul class="images">
+                    <li><a href="#"><img src="facebook.png" width="30px" height="30px"></a></li>
+                    <li><a href="#"><img src="linkedin.png" width="30px" height="30px"></a></li>
+                    <li><a href="#"><img src="twitter.png" width="30px" height="30px"></a></li>
+                </ul>
+                
+            </div>
+        </footer>
+    </body>
+</html>

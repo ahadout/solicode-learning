@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color: #363636;
+    padding: 5px 20px;
+}
+ul{
+    list-style-type: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #FDC500;
+}
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+}
+.logo a{
+    font-size: 20px;
+}
+.second.button{
+    border-bottom: 1px white solid;
+}
+#contact a{
+    color: #FDC500;
+    text-decoration: underline;
+}
+/*second navbar*/
+.menu1{
+    list-style-type: none;
+    background-color: #FDC500;
+    padding-bottom: 10px;
+}
+.menu1 li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu1 li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.menu1 li a:hover{
+    background-color: #363636;
+    border-radius: 10px;
+}
+#contact_formateur{
+    background-color: #363636;
+    border-radius: 30px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+.section1{
+    width: 25%;
+    background-color: #8D8D8D;
+    padding-top: 20px;
+}
+.section1 h2{
+    text-align: center;
+}
+.section1 a{
+    text-decoration: none;
+    color: black;
+}
+.section1 a:hover{
+    opacity: 50%;
+    text-decoration: underline;
+}
+.profile_pic img{
+    border-radius: 75px;
+}
+.profile{
+    display: flex;
+    margin-top: 20px;
+}
+.profile:hover{
+    background-color: #FDC500;
+    cursor: pointer;
+}
+.message{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.section2{
+    width: 75%;
+    background-color: #BBBBBB;
+}
+.profile2{
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+}
+input[type=text]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+  }
+/* mobile menu */
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    order: 1;
+    cursor: pointer;
+}
+.button.item{
+    order:2;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.item.active{
+    display: block;
+}
+.bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+.bars::before,.bars::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+}
+.menu1 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding-top: 10px;
+}
+footer{
+    background-color: #474747;
+    display: flex;
+}
+.foot{
+    padding: 25px 20px;
+}
+.foot h3{
+    color: #FAD307;
+    text-decoration: underline;
+}
+.foot a{
+    color: white;
+    text-decoration: none;
+    opacity: 50%;
+}
+.foot a:hover{
+    color: white;
+    text-decoration: underline;
+    opacity: 80%;
+}
+.foot li{
+    margin-top: 5px;
+}
+.social{
+    padding: 25px 20px;
+}
+.social h3{
+    color: #FAD307;
+    text-decoration: underline;
+}
+.social img{
+    margin-top: 10px;
+}
+/*tablet menu*/
+@media all and (min-width:550px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .button.item{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle{
+        order: 2;
+    }
+    .second.button{
+        border: 0;
+    }
+    .button a{
+        text-decoration: none;
+        padding: 7px 15px;
+        background: teal;
+        border: 1px solid #006d6d;
+        border-radius: 50em;
+    }
+    .button.second a{
+        background: transparent;
+    }
+    .buttona a:hover{
+        transition: all .25s;
+    }
+    .button:not(.second) a:hover{
+        background: #006d6d;
+        border-color: #005959;
+    }
+    .second.button a:hover{
+        color: #ddd;
+    }
+    
+}
+
+/*desktop*/
+@media all and (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+    .item{
+        flex: 1;
+    }
+    .button{
+        flex: 0.7;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
